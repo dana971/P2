@@ -26,7 +26,7 @@ body{
 
 main{
     margin: 0px auto;
-    max-width: 1600px;
+    max-width: 1200px;
 }
 
 header{
@@ -197,7 +197,7 @@ a{
 
 .center{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .main{
@@ -205,15 +205,14 @@ a{
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-right: 40px;
-    padding: 30px 40px
+    margin-right: 33px;
+    padding: 25px 25px
 }
 
 .card-hebergement{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:0px -17px;
 }
 
 .card{
@@ -223,16 +222,14 @@ a{
     margin-bottom: 30px;
     box-shadow: 0px 6px 20px #dddddd;
 }
-
-.card-hebergement .card{
-    margin-right: 17px;
-    margin-left: 17px;
+.card-hebergement a{
+    width:30%;
 }
 
 .card-hebergement .card img{
     border-radius: 15px 15px 0px 0;
-    width: 237px;
-    height:112px;
+    width: 100%;
+    height:105px;
     object-fit: cover;
 }
 
@@ -247,7 +244,9 @@ a{
 .card-hebergement .card-body p {
     margin-bottom: 5px;
     margin-top: 0px;
+    font-size: smaller;
 }
+
 
 .card-body i.grey-star{
     color:#D9D9D9;
@@ -273,7 +272,7 @@ h2 i.fa-solid.fa-star{
 .pop{
     background-color: #F2F2F2;
     border-radius:20px;
-    padding: 25px 40px;
+    padding: 25px 20px;
 }
 
 .cardpop{
@@ -283,6 +282,17 @@ h2 i.fa-solid.fa-star{
 
 .cardpop .card{
     display: flex;
+}
+
+.cardpop p:nth-child(1) {
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+.cardpop p:nth-child(2) {
+    margin-bottom: 0px;
+    margin-top:5px;
+    font-size: 13px;
 }
 
 .cardpop img{
@@ -440,6 +450,7 @@ li{
     .main{
         margin-right: 0px;
         border-radius: 0px;
+        padding: 30px 40px;
     }
 
     .pop{
@@ -460,6 +471,10 @@ li{
 
     .cardpop a {
         width : 48%;
+    }
+
+    .card-hebergement{
+        justify-content: space-around;
     }
 
     .sub-main{
@@ -594,18 +609,35 @@ li{
     }
 
     .cardpop img{
-        width:143px;
+        width:100%; /*Plus de taille en 143 px*/
+        height: 100%;
+    }
+
+    .card .card-image{
+        max-width: 30%;
+        min-width: 30%;
         height: 100%;
     }
 
     .cardpop .card{
         border: 5px solid white;
         padding: 0px;
-        height: 100%;
+        height: 90%;
     }
 
     .cardpop .card-body {
-        width: 100%;
+        width: 70%; /*Pas de width a 100%*/
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .cardpop .card-title{
+        margin-bottom: 0px;
+        margin-top:0px;
+    }
+
+    .cardpop p:nth-child(2) {
+        margin-bottom: 0px;
+        margin-top:0px;
     }
 
     .cardpop a {
